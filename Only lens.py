@@ -13,15 +13,9 @@ class beams:
         self.lens = lens;
         self.direction = direction;
         
-       
-        
-        for L in lens:
-            
+        for L in lens:            
             self.nodes_at_len(L);
             self.nodes_converge(L);
-            
-        #plt.figure();
-        #plt.plot(self.x,self.y);
         
     def nodes_at_len(self,Len):
         # nodes at the len
@@ -72,7 +66,7 @@ class beams:
         delta_y = y - self.y[-1];
         self.direction = [delta_x,delta_y];
         
-        
+# example
 L1 = lens(10,5);
 L2 = lens(20,5);
 L3 = lens(30,5);
